@@ -20,6 +20,15 @@
     transition: all .2s linear;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: #eee;
+}
+
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -148,10 +157,66 @@ header .icon #menu-bars {
     margin: 0 1rem;
 }
 
+.home .home-slider .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
 
+.home .home-slider .slide .content {
+    flex: 1 1 45rem;
+}
 
+.home .home-slider .slide .content span {
+    color: var(--green);
+    font-size: 2.5rem;
+}
 
+.home .home-slider .slide .content h3 {
+    color: var(--black);
+    font-size: 7rem;
+}
 
+.home .home-slider .slide .content p {
+    color: var(--light-color);
+    font-size: 2.2rem;
+    pad: 5rem 0;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.home .home-slider .slide .content .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .8rem 3rem;
+    background-color: var(--black);
+    color: #fff;
+
+}
+
+.home .home-slider .slide .content .btn:hover {
+    background-color: var(--green);
+    letter-spacing: .1rem;
+}
+
+.home .home-slider .slide .image {
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img {
+    width: 100%;
+    /* box-shadow: 10px 10px 20px green;
+    border-radius: 50%;*/
+}
+
+/*.home .home-slider .slide img:hover {
+    width: 100%;
+     box-shadow: 10px 10px 20px green;
+}*/
 
 
 
