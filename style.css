@@ -187,7 +187,23 @@ header .icon #menu-bars {
     margin-bottom: 35px;
 }
 
-.home .home-slider .slide .content .btn {
+.sub-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--green);
+    padding-top: 1rem;
+    ;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn {
     margin-top: 1rem;
     display: inline-block;
     font-size: 1.7rem;
@@ -198,7 +214,7 @@ header .icon #menu-bars {
 
 }
 
-.home .home-slider .slide .content .btn:hover {
+.btn:hover {
     background-color: var(--green);
     letter-spacing: .1rem;
 }
@@ -217,6 +233,152 @@ header .icon #menu-bars {
     width: 100%;
      box-shadow: 10px 10px 20px green;
 }*/
+
+.dishes .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dishes .box-container .fa-heart,
+.fa-eye {
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.dishes .box-container .fa-heart:hover,
+.fa-eye:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.dishes .box-container .fa-heart {
+    right: -15rem;
+}
+
+.dishes .box-container .fa-eye {
+    left: -15rem;
+}
+
+.dishes .box-container .box:hover .fa-heart {
+    right: 1.5rem;
+}
+
+.dishes .box-container .box:hover .fa-eye {
+    left: 1.5rem;
+}
+
+.dishes .box-container .box img {
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+.dishes .box-container .box h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.dishes .box-container .box .stars {
+    padding: 1rem 0;
+
+}
+
+.dishes .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--green);
+}
+
+.dishes .box-container .box span {
+    color: var(--green);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .contaent {
+    flex: 1 1 45rem;
+}
+
+.about .row .contaent h3 {
+    font-size: 4rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.about .row .contaent p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+.about .row .contaent .icons-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+
+}
+
+.about .row .contaent .icons-container .icon {
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .row .contaent .icons-container .icon i {
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.about .row .contaent .icons-container .icon span {
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+
+
 
 
 
@@ -272,5 +434,10 @@ header .icon #menu-bars {
 @media (max-width:991px) {
     html {
         font-size: 50%;
+    }
+
+    .dishes .box-container .box img {
+        height: auto;
+        width: 100%;
     }
 }
