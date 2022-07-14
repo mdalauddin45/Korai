@@ -56,9 +56,14 @@ header .logo {
     font-weight: bolder;
 }
 
-header .logo i {
-    color: var(--green);
+header img {
+    height: 60px;
+    cursor: pointer;
 }
+
+/* header .logo i {
+    color: var(--green);
+} */
 
 header .navbar a {
     font-size: 1.7rem;
